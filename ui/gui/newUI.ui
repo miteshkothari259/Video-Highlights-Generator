@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>372</width>
+    <height>525</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Video Summarization</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(253, 248, 245);
+color: rgb(221, 175, 148);</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>372</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QFrame" name="selectframe">
+         <property name="styleSheet">
+          <string notr="true">font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+border-bottom-width: 1px;
+border-bottom-style: outset;
+border-bottom-color: rgb(79, 72, 70);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QLabel" name="selectLabel">
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>11</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+              <underline>false</underline>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style: None;
+</string>
+            </property>
+            <property name="text">
+             <string>SELECT</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="selectComboBox">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(247, 247, 247);
+selection-background-color: rgb(247, 247, 247);
+selection-color: rgb(221, 175, 148);
+</string>
+            </property>
+            <property name="placeholderText">
+             <string>sumarization</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Movie</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Sports</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="chooseFrame">
+         <property name="styleSheet">
+          <string notr="true">font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+border-bottom-width: 1px;
+border-bottom-style: outset;
+border-bottom-color: rgb(79, 72, 70);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QLabel" name="chooseLabel">
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>11</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style: None;
+</string>
+            </property>
+            <property name="text">
+             <string>Choose</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="chooseComboBox">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(247, 247, 247);
+selection-background-color: rgb(247, 247, 247);
+selection-color: rgb(221, 175, 148);
+</string>
+            </property>
+            <property name="placeholderText">
+             <string>type of input</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Local Computer</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Youtube Link</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="urlFrame">
+         <property name="styleSheet">
+          <string notr="true">font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+border-bottom-width: 1px;
+border-bottom-style: outset;
+border-bottom-color: rgb(79, 72, 70);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="urlLabel">
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>11</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-bottom-style: none;</string>
+            </property>
+            <property name="text">
+             <string>URL</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="urlTextBox">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(247, 247, 247);
+color: rgb(0, 0, 0);
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="pathFrame">
+         <property name="styleSheet">
+          <string notr="true">font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+border-bottom-width: 1px;
+border-bottom-style: outset;
+border-bottom-color: rgb(79, 72, 70);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="pathLabel">
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>11</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-bottom-style: none;</string>
+            </property>
+            <property name="text">
+             <string>PATH</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="pathTextBox">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(247, 247, 247);
+color: rgb(0, 0, 0);
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="browseButton">
+            <property name="text">
+             <string>BROWSE</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="generateframe">
+         <property name="styleSheet">
+          <string notr="true">font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+border-bottom-width: 1px;
+border-bottom-style: outset;
+border-bottom-color: rgb(79, 72, 70);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="generateButton">
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>11</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>GENERATE</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QFrame" name="gifFrame">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="outputBox">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>361</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>372</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuOptions"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
